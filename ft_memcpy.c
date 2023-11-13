@@ -6,12 +6,13 @@
 /*   By: ichaabi <ichaabi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 21:35:52 by ichaabi           #+#    #+#             */
-/*   Updated: 2023/11/05 19:34:37 by ichaabi          ###   ########.fr       */
+/*   Updated: 2023/11/13 03:05:16 by ichaabi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
+#include <string.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

@@ -6,11 +6,12 @@
 /*   By: ichaabi <ichaabi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 12:40:07 by ichaabi           #+#    #+#             */
-/*   Updated: 2023/11/06 13:19:04 by ichaabi          ###   ########.fr       */
+/*   Updated: 2023/11/13 03:01:39 by ichaabi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
 
 int	ft_strncmp(const char *s1, char *s2, unsigned int n)
 {
