@@ -6,7 +6,7 @@
 /*   By: ichaabi <ichaabi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:56:06 by ichaabi           #+#    #+#             */
-/*   Updated: 2023/11/08 21:30:57 by ichaabi          ###   ########.fr       */
+/*   Updated: 2023/11/19 19:53:31 by ichaabi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*p;
 
 	total = count * size;
-	p = (char *)malloc(total * sizeof(char));
+	if (total > 9223372036854775807ULL)
+		return (NULL);
+	p = (char *)malloc(total);
 	if (!p)
 		return (0);
 	ft_memset(p, 0, total);

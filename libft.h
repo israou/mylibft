@@ -6,7 +6,7 @@
 /*   By: ichaabi <ichaabi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 22:12:00 by ichaabi           #+#    #+#             */
-/*   Updated: 2023/11/13 02:37:37 by ichaabi          ###   ########.fr       */
+/*   Updated: 2023/11/19 15:56:20 by ichaabi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <stddef.h>
 # include <stdio.h>
 
 int		ft_isalpha(int i);
@@ -24,7 +25,7 @@ int		ft_isascii(int i);
 int		ft_isprint(int i);
 int		ft_toupper(int i);
 int		ft_tolower(int i);
-int		ft_strlen(const char *str);
+size_t	ft_strlen(const char *str);
 int		ft_strmcmp(const char *s1, char *s2, unsigned int n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_strncmp(const char *s1, char *s2, unsigned int n);
@@ -55,7 +56,6 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-
 typedef struct s_list
 {
 	void			*content;
@@ -68,5 +68,7 @@ int		ft_lstsize(t_list *lst);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 t_list	*ft_lstlast(t_list *lst);
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
-
+void	ft_lstclear(t_list **lst, void (*del)(void *));
+void	ft_lstiter(t_list *lst, void (*f)(void *));
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 #endif

@@ -6,12 +6,11 @@
 /*   By: ichaabi <ichaabi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 15:29:38 by ichaabi           #+#    #+#             */
-/*   Updated: 2023/11/10 01:38:36 by ichaabi          ###   ########.fr       */
+/*   Updated: 2023/11/18 17:36:33 by ichaabi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {

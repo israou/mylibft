@@ -6,12 +6,11 @@
 /*   By: ichaabi <ichaabi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 09:50:09 by ichaabi           #+#    #+#             */
-/*   Updated: 2023/11/09 17:08:14 by ichaabi          ###   ########.fr       */
+/*   Updated: 2023/11/18 17:36:23 by ichaabi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strchr(const char *s, int c)
 {

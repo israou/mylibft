@@ -6,14 +6,11 @@
 /*   By: ichaabi <ichaabi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 10:47:25 by ichaabi           #+#    #+#             */
-/*   Updated: 2023/11/09 16:05:50 by ichaabi          ###   ########.fr       */
+/*   Updated: 2023/11/18 17:36:48 by ichaabi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-
-#include <stdio.h>
 
 char	*ft_strnstr(const char *hst, const char *ndl, size_t len)
 {
